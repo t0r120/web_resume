@@ -1,11 +1,33 @@
 body {
     font-family: 'Press Start 2P', monospace;
+    margin-block-start: auto;
+    margin: 0;
+    
   }
 
+.burger-button{
+  margin-left: 10px;
+}
+
+
+.global-header{
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(51, 77, 228);
+  padding: 1px;
+
+}
+
 #main-p-title{
-
-  background-color: antiquewhite;
-  border: 2px;
-
+  background-color: rgb(227, 227, 227);
+  border: solid, 3px;
+  text-align: center;
+  width: 10em;
+  padding: 5px;
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
 }
    
