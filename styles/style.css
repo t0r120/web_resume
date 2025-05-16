@@ -30,4 +30,37 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-   
+
+#main-speach{
+  background-color: rgb(215, 215, 215);
+  display: flex;
+  justify-content: space-around;
+  border: solid, 8px;
+  margin: 10px;
+}
+#main-speach >  h1{
+  margin-block:auto;
+  padding: 2px;
+  margin-inline-start: 5px;
+}
+#main-speach > p{
+  padding: 20px;
+  text-align: justify;
+}
+
+#main-figure{
+  background-color: rgb(58, 58, 58);
+  border: solid, 5px;
+}
+#main-figure > img{
+  height: 10em;
+  width: 10em;
+
+}
+
+#main-figure >figcaption{
+  text-align: center;
+  color: aliceblue;
+  padding-block: 0;
+  padding-top: 10px;
+}
