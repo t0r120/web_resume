@@ -64,3 +64,38 @@ body {
   padding-block: 0;
   padding-top: 10px;
 }
+
+/* End of personal introduction*/
+#academic-title{
+  display: flex;
+  justify-content: center;
+
+}
+
+#academic-title > h2{
+  border: solid, 5px;
+  width: 10em;
+  text-align: center;
+  padding: 2px;
+  background-color: rgb(215, 215, 215);
+}
+
+#global-footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(92, 222, 129);
+}
+
+#navbar{
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-ul{
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+  padding: 0%;
+}
+.nav-ul > li{
+  margin-right: 1em;
+}
