@@ -99,3 +99,7 @@ body {
 .nav-ul > li{
   margin-right: 1em;
 }
+
+.experience{
+  border: solid 2px;
+}
