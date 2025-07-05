@@ -37,6 +37,7 @@ body {
   justify-content: space-around;
   border: solid, 8px;
   margin: 10px;
+  height:  100vh;
 }
 #main-speach >  h1{
   margin-block:auto;
@@ -46,11 +47,16 @@ body {
 #main-speach > p{
   padding: 20px;
   text-align: justify;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  
 }
 
 #main-figure{
   background-color: rgb(58, 58, 58);
   border: solid, 5px;
+  height: 12em;
+  width: auto;
 }
 #main-figure > img{
   height: 10em;
