@@ -16,19 +16,42 @@
     
 
     <header class="global-header">
-        <button class="burger-button">☰</button>
-        <h1 id="main-p-title">Personal web </h1> 
-        
+
+        <button class="buttons burger-button">☰</button>
+
+         <nav id="navbar">
+            <ul class="nav-ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+
+        <button class="buttons language-button">
+            <h3>Language</h3>
+        </button>
     </header>
 
     <main>
         <article id="main-speach">
-            <h1>Jair Hurtado <br> Hernandez</h1>
-            <p>From Mexico City., Mexico. Throughout my academic journey, I have focused my development on the intersection of bioinformatics, 
-                data analysis and management, technological project structuring, cloud computing, and web development. This combination, along 
-                 with the demands and versatility of my degree, has allowed me to build a multidisciplinary, adaptable profile with a strong 
-                orientation toward creative problem-solving in complex scenarios.
-            </p>
+            <div class="speach-container">
+                <h1> 
+                    <span class="head-name">Jair</span>
+                     Hurtado <br> Hernandez
+                </h1>
+                <p>From Mexico City., Mexico. Throughout my academic journey, I have focused my development on the intersection of bioinformatics, 
+                    data analysis and management, technological project structuring, cloud computing, and web development. This combination, along 
+                    with the demands and versatility of my degree, has allowed me to build a multidisciplinary, adaptable profile with a strong 
+                    orientation toward creative problem-solving in complex scenarios.
+                </p>
+                <div id="svgs">
+                    <a href="https://github.com/t0r120"><img class="img-svg" src="../images/GitHub_dark.svg" alt="Github svg"></a>
+                    <a href="https://www.linkedin.com/in/jair-hurtado-hernandez-0b930a335/"><img class="img-svg" src="../images/linkedin.svg" alt="Linkdin svg"></a>
+                    <a href="https://mastodon.social/@t0r120"><img class="img-svg" src="../images/mastodon.svg" alt="Matodon svg"></a>
+                    
+                </div>
+            </div>
+    
             <figure id="main-figure">
                 <img src="../images/_7d74646a-4bf1-45dd-aca6-013a4b05ad09.jpg" alt="Personal img">
                 <figcaption>Me</figcaption>
@@ -85,23 +108,12 @@
             </article>
         </div>
 
-        
+
     </main>
 
 
     <footer id="global-footer">
-        <nav id="navbar">
-            <ul class="nav-ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-
-        <button>
-            <h3>Language</h3>
-        </button>
-
+       
     </footer>
     
     
