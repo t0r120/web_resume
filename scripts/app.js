@@ -1,4 +1,4 @@
-let names = ['Juan','Pepe', 'Victoria','Pancracia','Ramon'];
+/* let names = ['Juan','Pepe', 'Victoria','Pancracia','Ramon'];
 const savedNames = names.slice(0, names.length);
 const deletedNames = names.splice(0,3);
 
@@ -6,7 +6,7 @@ console.log(`Original names: ${savedNames}`);
 console.log(`Deleted names: ${deletedNames}`);
 console.log(`Changed name: ${names.splice(0,3)}`);
 
-/*
+
 let greeting = " Hello!  ";
 const trimmed = greeting.trim()
 for(let i = 0; i<names.length; i++){
@@ -47,4 +47,10 @@ const lastLetter = string => {
 
 console.log(lastLetter("hola"));
 */
+
+
+alert("Welcome");
+
+
+
 
