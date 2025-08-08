@@ -173,11 +173,24 @@ body {
 }
 
 .containers{
-  border: solid 2px;
+  
   width: 20rem;
   height: auto;
+  padding: 2em;
+  box-shadow: 5px 5px 8px rgba(22, 0, 144, 0.4);
+ 
+}
+.containers:hover{
+
+  box-shadow: 5px 5px 8px rgba(199, 27, 101, 0.4);
 }
 
+.see-button{
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 0.3em;
+  
+}
 
 #global-footer{
   display: flex;

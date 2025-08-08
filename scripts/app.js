@@ -51,6 +51,10 @@ console.log(lastLetter("hola"));
 
 alert("Welcome");
 
+const element = document.querySelectorAll("html");
+console.log(element.children);
+
+
 
 
 
