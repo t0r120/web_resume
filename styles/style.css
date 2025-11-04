@@ -140,12 +140,19 @@ body {
   margin-top: 2em;
 }
 #main-figure > img{
-  height: 17em;
-  width: 17em;
- border-radius: 50%;
- border: solid 4px;
+  height: 22em;
+  width: 18em;
+ border-radius: 5%;
+ box-shadow: 1px 1px 15px 1px rgba(73, 209, 255, 0.301);
 
 }
+
+#main-figure img:hover{
+
+  box-shadow:1px 1px 15px 1px rgba(216, 68, 103, 0.301);
+
+}
+
 
 #main-figure >figcaption{
   text-align: center;
