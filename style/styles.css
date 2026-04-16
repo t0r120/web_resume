@@ -216,7 +216,7 @@ ul {
 }
 
 .head-name{
-  background: -webkit-linear-gradient(right, #f0ff4f, #4af45b);
+  background: -webkit-linear-gradient(right, #75ddd8, #1d4aff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
