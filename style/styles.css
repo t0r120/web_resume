@@ -1,0 +1,365 @@
+:root {
+    /* Colores — exactamente los de tu diseño en Figma */
+    --color-bg: #292929;
+    --color-surface: #383838;
+    --color-green: #41d864;
+    --color-darkgreen: #3C7F4B;
+    --color-gold: #e8be6a;
+    --color-darkgold: #9C7E34;
+    --color-red: #d84141;
+    --color-darkred: #812222;
+    --color-lightblue: #5dbbe0;
+    --color-blue: #4d68d6;
+    --color-purple: #a949e1;
+    --color-pink: #e1709d;
+    --color-white: #ffffff;
+    --color-muted: #8c8c8c;
+    --color-dark: #1a1a1a;
+
+    /* Tipografía */
+    --font-body: 'Rubik', sans-serif;
+    --font-display: 'Rubik One', sans-serif;
+
+    /* Espaciado — usamos múltiplos de 8px (sistema de 8pt grid) */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 48px;
+    --space-xl: 80px;
+
+    /* Bordes */
+    --radius-sm: 14px;
+    --radius-md: 20px;
+    --radius-pill: 100px;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*
+    Por defecto, el ancho de un elemento no incluye
+    padding ni border. box-sizing: border-box lo incluye.
+    Hace los cálculos de tamaño mucho más predecibles.
+  */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*
+    Hace que los links tipo href="#contacto" hagan
+    scroll suave en lugar de saltar bruscamente.
+  */
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.5;
+    /*
+    line-height: 1.5 = el espacio entre líneas es
+    1.5 veces el tamaño de la fuente. Mejora legibilidad.
+  */
+    -webkit-font-smoothing: antialiased;
+    /*
+    Hace el texto más nítido en pantallas Mac/iOS.
+  */
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    /*
+    max-width: 100% evita que las imágenes se salgan
+    de su contenedor.
+    display: block elimina el espacio extra que los
+    navegadores agregan debajo de las imágenes (son
+    inline por defecto, como texto).
+  */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    /* Quitamos los bullets por defecto de las listas */
+}
+
+
+
+.label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    /* 15% del tamaño de fuente */
+    color: var(--color-gold);
+    text-transform: uppercase;
+}
+
+/* Línea divisoria */
+.divider {
+    border: none;
+    border-top: 1px solid var(--color-darkgold);
+    /* rgba() permite transparencia: el verde al 25% de opacidad */
+    margin: var(--space-sm) 0;
+}
+
+/* --- Settings section ends ---*/
+
+
+
+
+
+
+.global-header{
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(19, 32, 20, 0.626);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+ 
+}
+
+.buttons.language-button{
+
+  height: 3em;
+  border-radius: 4px;
+  background-color: rgb(3, 41, 7);
+  color: rgb(223, 223, 223);
+  border: none;
+  margin-inline-end: 1em;
+}
+
+
+
+.language-button > h3{
+  margin: auto;
+  font-size: small;
+}
+
+.language-button:hover{
+  background-color: rgb(225, 225, 225);
+  color: rgb(30, 30, 30);
+}
+
+.burger-button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  height: 2em;
+}
+
+.burger-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.nav-ul{
+  display: flex;
+  list-style: none;
+  margin-right: auto;
+  padding: 0%;
+}
+.nav-ul > li{
+  margin-right: 1em;
+}
+
+.nav-ul > li > a{
+  color:white;
+  text-decoration: none;
+}
+
+
+
+
+
+#main-speach{
+  background-image: url(../imgs/layered-steps-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  display: flex;
+  justify-content: space-between;
+  height:  100vh;
+  align-items: center;
+}
+
+.speach-container{
+  width: 40%;
+}
+
+.speach-container > h1{
+  padding: 2px;
+  margin-inline-start: 2%;
+  font-size: 4em;
+  color:rgb(255, 255, 255);
+}
+
+.head-name{
+  background: -webkit-linear-gradient(right, #f0ff4f, #4af45b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.speach-container > p{
+  padding: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  font-size: 22px;
+  color: white;
+  
+}
+/* ------- SVGs --------- */
+
+
+.svg__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: left; /* Alineación vertical */
+    justify-content: flex-start; /* O center, según tu diseño */
+    margin: 20px 0px 0px 20px;
+}
+
+/* 2. El "marco" para cada icono */
+.svg__container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-green);
+    width: 45px;  /* Tamaño fijo del área clickable */
+    height: 45px;
+    text-decoration: none;
+}
+
+/* 3. Control de los SVGs */
+.svg__container svg {
+    /* Eliminamos cualquier restricción previa */
+    height: auto;
+    display: block;
+}
+
+/* 4. EL TRUCO: Normalización manual */
+/* Como las escalas son distintas, ajustamos el ancho visual de cada uno */
+.github svg {
+    width: 80%; /* El de GitHub es muy grande, que ocupe todo el marco */
+}
+
+.linkedin svg {
+    width: 100%;  /* El de LinkedIn suele verse gigante si está al 100% */
+}
+
+.mastodon svg {
+    width: 85%;  /* Ajuste fino para Mastodon */
+}
+
+.github:hover {
+    color: var(--color-blue);/* El de GitHub es muy grande, que ocupe todo el marco */
+}
+
+.linkedin:hover {
+    color: var(--color-lightblue); /* El de LinkedIn suele verse gigante si está al 100% */
+}
+
+.mastodon:hover {
+    color: var(--color-purple); /* Ajuste fino para Mastodon */
+}
+
+/* ------- SVGs --------- */
+
+
+#main-figure{
+  
+  height: auto;
+  width: auto;
+  margin-inline-end: 5em;
+  margin-top: 2em;
+}
+#main-figure > img{
+  height: 50%;
+  width: 100%;
+}
+
+#main-figure img:hover{
+
+  box-shadow:1px 1px 15px 1px rgba(6, 35, 0, 0.489);
+  border-radius: 10%;
+  transition: 0.4s ease;
+  transform: scale(1.05);
+}
+
+
+#main-figure >figcaption{
+  text-align: center;
+  color: aliceblue;
+  padding-block: 0;
+  padding-top: 10px;
+}
+
+/* End of personal introduction*/
+
+
+.titles > h2{
+  color: black;
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-inline-start: 2em;
+}
+
+#academic-journey{
+
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.containers{
+  
+  width: 20rem;
+  height: auto;
+  padding: 2em;
+  box-shadow: 5px 5px 8px rgba(22, 0, 144, 0.4);
+  border-radius: 5%;
+ 
+}
+.containers:hover{
+
+  box-shadow: 5px 5px 8px rgba(199, 27, 101, 0.4);
+}
+
+.see-button{
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 0.3em;
+  
+}
+
+#global-footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(92, 222, 129);
+  
+}
