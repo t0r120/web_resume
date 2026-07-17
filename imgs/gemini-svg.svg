@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%" style="background-color: #f8f9fa;">
+  <defs>
+    <style>
+      .estado-mexico { fill: #e9ecef; stroke: #adb5bd; stroke-width: 1; transition: fill 0.2s; }
+      .cdmx { fill: #dee2e6; stroke: #495057; stroke-width: 1.5; transition: fill 0.2s; }
+      .estado-mexico:hover { fill: #ced4da; }
+      .cdmx:hover { fill: #c1c9d0; }
+    </style>
+  </defs>
+
+  <g id="estado-de-mexico" class="estado-mexico">
+    </g>
+
+  <g id="cdmx" class="cdmx" transform="translate(345, 320) scale(0.85)">
+    </g>
+</svg>
